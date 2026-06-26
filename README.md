@@ -1,36 +1,288 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nexora
 
-## Getting Started
+> **Transform Data Into Decisions. Instantly.**
 
-First, run the development server:
+A premium, enterprise-grade AI Data Automation Platform landing page built for **FrontEnd Battle 3.0**. The project demonstrates modern frontend engineering practices with a strong emphasis on performance, accessibility, responsive design, semantic HTML, and technical SEO.
+
+## 🌐 Live Demo
+
+**Website:** https://front-end-battle-nexora.vercel.app
+
+## 📂 Repository
+
+**GitHub:** https://github.com/shuban2007/FrontEndBattle_Nexora
+
+---
+
+## ✨ Overview
+
+Nexora is a fictional AI-powered enterprise platform designed to help organizations automate workflows, connect data sources, and generate intelligent business insights from a unified dashboard.
+
+The landing page focuses on delivering a polished SaaS experience while maintaining clean architecture and high engineering standards.
+
+---
+
+## 🚀 Features
+
+* Premium enterprise SaaS UI
+* Fully responsive across desktop, tablet, and mobile
+* Interactive Bento Grid that transforms into an Accordion on mobile
+* Dynamic pricing engine with multiple currencies and billing cycles
+* Semantic HTML5 structure
+* Technical SEO using the Next.js Metadata API
+* Structured data (Schema.org)
+* Accessible keyboard navigation
+* Responsive typography system
+* CSS-only animations (no prohibited animation libraries)
+* Optimized production build
+* Modern component-based architecture
+
+---
+
+## 🛠 Tech Stack
+
+### Framework
+
+* Next.js 14 (App Router)
+
+### Language
+
+* TypeScript
+
+### Styling
+
+* Tailwind CSS
+* CSS Variables
+* CSS Keyframes
+* CSS Transitions
+
+### Fonts
+
+* Inter
+* JetBrains Mono
+
+### Deployment
+
+* Vercel
+
+---
+
+## 📁 Project Structure
+
+```text
+src/
+├── app/
+├── components/
+│   ├── layout/
+│   ├── sections/
+│   ├── shared/
+│   └── ui/
+├── hooks/
+├── lib/
+├── types/
+├── utils/
+└── styles/
+```
+
+---
+
+## 🎯 Key Highlights
+
+### Responsive Feature Showcase
+
+The feature showcase intelligently adapts between layouts:
+
+* **Desktop:** Bento Grid
+* **Tablet:** Adaptive Grid
+* **Mobile:** Accordion
+
+The active feature state is preserved when resizing between breakpoints, providing a seamless user experience.
+
+---
+
+### Dynamic Pricing Engine
+
+Pricing is calculated dynamically based on:
+
+* Selected currency
+* Billing cycle
+* Regional pricing multipliers
+* Discount rules
+
+Displayed prices are derived from calculations instead of hardcoded values.
+
+---
+
+### Performance
+
+The project is optimized for production with:
+
+* Static rendering where appropriate
+* Optimized font loading
+* Efficient component architecture
+* Localized React state
+* Minimal unnecessary re-renders
+* CSS-based animations
+* Optimized bundle size
+
+---
+
+### SEO
+
+The application includes:
+
+* Metadata API
+* Open Graph metadata
+* Twitter metadata
+* Canonical URLs
+* Robots configuration
+* Sitemap generation
+* Semantic HTML
+* Structured data (Schema.org)
+* Accessible heading hierarchy
+
+---
+
+### Accessibility
+
+Accessibility considerations include:
+
+* Semantic HTML5
+* Keyboard navigation
+* Focus-visible states
+* ARIA attributes where appropriate
+* Meaningful image alt text
+* Responsive typography
+* Reduced motion support where applicable
+
+---
+
+## 🏗 Engineering Principles
+
+This project was built with a focus on:
+
+* Component reusability
+* Clean architecture
+* Performance-first rendering
+* Responsive design
+* Accessibility
+* Maintainability
+* Technical SEO
+* Production-ready code quality
+
+---
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/shuban2007/FrontEndBattle_Nexora.git
+```
+
+Navigate to the project:
+
+```bash
+cd FrontEndBattle_Nexora
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
+## 🏗 Build
 
-To learn more about Next.js, take a look at the following resources:
+Create a production build:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Run the production server:
 
-## Deploy on Vercel
+```bash
+npm run start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 📋 Scripts
+
+```bash
+npm run dev
+```
+
+Start the development server.
+
+```bash
+npm run build
+```
+
+Generate the production build.
+
+```bash
+npm run start
+```
+
+Run the production server.
+
+```bash
+npm run lint
+```
+
+Run ESLint.
+
+---
+
+## 🎨 Design Goals
+
+* Clean enterprise aesthetic
+* High information density
+* Smooth micro-interactions
+* Consistent typography
+* Responsive layouts
+* Strong visual hierarchy
+* Modern SaaS experience
+
+---
+
+## 📈 Future Improvements
+
+Potential future enhancements include:
+
+* Dark/Light theme toggle
+* Multi-language support
+* Blog and documentation pages
+* Authentication flow
+* Interactive dashboard preview
+* Analytics integration
+
+---
+
+## 👨‍💻 Author
+
+**Shuban Shinde**
+
+GitHub: https://github.com/shuban2007
+
+---
+
+## 📄 License
+
+This project was created for educational and competition purposes as part of **FrontEnd Battle 3.0**.
