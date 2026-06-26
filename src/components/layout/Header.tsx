@@ -20,10 +20,10 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { label: "Features", href: "#features" },
-    { label: "Pricing", href: "#pricing" },
-    { label: "Testimonials", href: "#testimonials" },
-    { label: "FAQ", href: "#faq" },
+    { label: "Features", href: "/#features" },
+    { label: "Pricing", href: "/#pricing" },
+    { label: "Testimonials", href: "/#testimonials" },
+    { label: "FAQ", href: "/#faq" },
   ];
 
   return (
@@ -36,7 +36,7 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Brand Logo */}
-        <a href="#" className="flex items-center gap-2.5 focus-visible:outline-none" aria-label="Nexora Home">
+        <a href="/" className="flex items-center gap-2.5 focus-visible:outline-none" aria-label="Nexora Home">
           <div className="w-9 h-9 rounded-lg bg-gradient-to-tr from-forsythia to-deep-saffron flex items-center justify-center shadow-lg shadow-forsythia/10">
             <span className="font-mono text-black font-extrabold text-lg tracking-wider">N</span>
           </div>
@@ -61,13 +61,13 @@ export default function Header() {
         {/* Desktop CTAs */}
         <div className="hidden md:flex items-center gap-4">
           <a
-            href="#cta"
+            href="/#cta"
             className="text-sm font-medium text-white hover:text-forsythia transition-colors duration-150 px-4 py-2 rounded-lg border border-white/10 hover:border-forsythia/30 bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forsythia"
           >
             Book Demo
           </a>
           <a
-            href="#pricing"
+            href="/#pricing"
             className="text-sm font-semibold text-black bg-gradient-to-r from-forsythia to-deep-saffron hover:from-deep-saffron hover:to-forsythia transition-all duration-300 px-5 py-2 rounded-lg shadow-lg shadow-forsythia/10 hover:shadow-forsythia/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forsythia"
           >
             Start Free
@@ -104,7 +104,7 @@ export default function Header() {
       >
         <div>
           <div className="flex items-center justify-between mb-8">
-            <a href="#" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
+            <a href="/" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
               <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-forsythia to-deep-saffron flex items-center justify-center">
                 <span className="font-mono text-black font-extrabold text-base">N</span>
               </div>
@@ -135,14 +135,14 @@ export default function Header() {
 
         <div className="flex flex-col gap-4 mt-auto">
           <a
-            href="#cta"
+            href="/#cta"
             onClick={() => setMobileMenuOpen(false)}
             className="w-full text-center py-3 text-white font-medium rounded-lg border border-white/10 hover:border-forsythia/30 bg-white/5 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forsythia"
           >
             Book Demo
           </a>
           <a
-            href="#pricing"
+            href="/#pricing"
             onClick={() => setMobileMenuOpen(false)}
             className="w-full text-center py-3 text-black font-semibold rounded-lg bg-gradient-to-r from-forsythia to-deep-saffron hover:from-deep-saffron hover:to-forsythia transition-all shadow-lg shadow-forsythia/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forsythia"
           >
