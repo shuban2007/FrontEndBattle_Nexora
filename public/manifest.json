@@ -1,0 +1,16 @@
+{
+  "name": "Nexora Enterprise AI Data Automation",
+  "short_name": "Nexora",
+  "description": "Transform Data Into Decisions. Instantly.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A161C",
+  "theme_color": "#172B36",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Hexora Color Palette */
+  --arctic-powder: 241, 246, 244;       /* #F1F6F4 */
+  --mystic-mint: 217, 232, 226;         /* #D9E8E2 */
+  --forsythia: 255, 200, 1;             /* #FFC801 */
+  --deep-saffron: 255, 153, 50;         /* #FF9932 */
+  --nocturnal-expedition: 17, 76, 90;   /* #114C5A */
+  --oceanic-noir: 23, 43, 54;           /* #172B36 */
+  
+  /* Additional neutral shades derived for premium dark mode */
+  --background-raw: 10, 22, 28;         /* Darker variant of Oceanic Noir */
+  --foreground-raw: var(--arctic-powder);      /* Arctic Powder */
+  
+  --card-bg-raw: var(--oceanic-noir);            /* Oceanic Noir */
+  --card-border-raw: 35, 65, 80;
+}
+
+@layer base {
+  body {
+    background-color: rgb(var(--background-raw));
+    color: rgb(var(--foreground-raw));
+    font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  /* Focus indicator styling */
+  *:focus-visible {
+    outline: 2px solid rgb(var(--forsythia));
+    outline-offset: 4px;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .bg-glass {
+    background: rgba(17, 76, 90, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(217, 232, 226, 0.1);
+  }
+  .bg-glass-card {
+    background: rgba(23, 43, 54, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(217, 232, 226, 0.08);
+  }
+  .text-gradient-primary {
+    background: linear-gradient(135deg, rgb(var(--arctic-powder)) 30%, rgb(var(--mystic-mint)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .text-gradient-accent {
+    background: linear-gradient(135deg, rgb(var(--forsythia)) 0%, rgb(var(--deep-saffron)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .border-glow {
+    position: relative;
+  }
+  .border-glow::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(255, 200, 1, 0.4), rgba(255, 153, 50, 0.1), rgba(17, 76, 90, 0.4));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+}
+
+/* Animations system conforming to Motion Architecture specs */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes infiniteScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.animate-infinite-scroll {
+  animation: infiniteScroll 30s linear infinite;
+}
+
+/* Respect system prefers-reduced-motion settings */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-delay: 0s !important;
+    animation-duration: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0s !important;
+    scroll-behavior: auto !important;
+  }
+}
